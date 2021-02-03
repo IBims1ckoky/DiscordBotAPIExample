@@ -21,7 +21,7 @@ public class Bootstrap {
     System.out.println("DiscordBotAPI Example - by @IBims1ckoky | Maxi Zink");
 
     DiscordBot discordBot = null;
-    try {
+    try { git commit -m '(some message stating you added .idea to ignored entries)'
       discordBot = new DiscordBot(BOT_TOKEN);
     } catch (LoginException | InterruptedException e) {
       Logger.ERROR("Error while starting the Service!");
