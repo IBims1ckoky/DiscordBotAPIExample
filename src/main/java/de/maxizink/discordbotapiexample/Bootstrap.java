@@ -15,14 +15,12 @@ import javax.security.auth.login.LoginException;
 
 public class Bootstrap {
 
-  public static final String BOT_TOKEN = "token";
-
   public static void main(final String[] args) {
     System.out.println("DiscordBotAPI Example - by @IBims1ckoky | Maxi Zink");
 
     DiscordBot discordBot = null;
-    try { git commit -m '(some message stating you added .idea to ignored entries)'
-      discordBot = new DiscordBot(BOT_TOKEN);
+    try {
+      discordBot = new DiscordBot("token");
     } catch (LoginException | InterruptedException e) {
       Logger.ERROR("Error while starting the Service!");
       e.printStackTrace();
